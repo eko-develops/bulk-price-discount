@@ -46,4 +46,13 @@ body {
 #output {
 	margin-top: 3rem;
 	text-align: center;
+
+	table {
+		margin: auto;
+		padding: 1rem;
+
+		th {
+			padding: 0.5rem 2rem;
+		}
+	}
 }

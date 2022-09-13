@@ -42,4 +42,11 @@ body main {
 #output {
   margin-top: 3rem;
   text-align: center;
+}
+#output table {
+  margin: auto;
+  padding: 1rem;
+}
+#output table th {
+  padding: 0.5rem 2rem;
 }/*# sourceMappingURL=styles.css.map */

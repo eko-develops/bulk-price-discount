@@ -2,11 +2,23 @@ const main = () => {
 	// eslint-disable-next-line no-undef
 	const form = document.getElementById('prices-form');
 
+	const reset = document.getElementById('prices-reset-btn');
+
+	reset.addEventListener('click', handleFormReset);
 	form.addEventListener('submit', handleFormSubmit);
+};
+
+const handleFormReset = (e) => {
+	e.preventDefault();
+	const textArea = document.getElementById('prices');
+	textArea.value = '';
 };
 
 const handleFormSubmit = (e) => {
 	e.preventDefault();
+
+	const table = document.querySelector('#output table');
+
 	const textArea = document.getElementById('prices');
 
 	const separatedPrices = textArea.value.split('\n');
@@ -30,7 +42,15 @@ const handleFormSubmit = (e) => {
 		};
 	});
 
+	textArea.value = '';
+	removeChilds(table);
 	appendToOutput(result);
+};
+
+const removeChilds = (parent) => {
+	while (parent.lastChild) {
+		parent.removeChild(parent.lastChild);
+	}
 };
 
 const appendToOutput = (result) => {
@@ -65,7 +85,6 @@ const createTableHeaders = () => {
 
 const createTableData = (result) => {
 	const data = result.map((price) => {
-		console.log(price);
 		const row = document.createElement('tr');
 
 		const discountAmount = document.createElement('td');
