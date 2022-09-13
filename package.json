@@ -1,0 +1,20 @@
+{
+  "name": "bulk-price-discount",
+  "version": "1.0.0",
+  "description": "Get sale information from a price and discount amount",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eko-develops/bulk-price-discount.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eko-develops/bulk-price-discount/issues"
+  },
+  "homepage": "https://github.com/eko-develops/bulk-price-discount#readme"
+}
