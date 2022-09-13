@@ -4,11 +4,32 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Bulk Price Discount</title>
+		<title>Bulk Price Discount Finder</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
 
 		<link rel="stylesheet" href="dist/styles.css" />
 	</head>
 	<body>
+		<main>
+			<div id="description">
+				<h1>Bulk Price Discount Finder</h1>
+			</div>
+			<form id="prices-form">
+				<textarea rows="10" cols="40" id="prices"></textarea>
+				<button type="submit" id="prices-submit-btn">Submit</button>
+			</form>
+			<div id="output">
+				<h2>Results</h2>
+				Hello I am output!
+			</div>
+		</main>
+
 		<script src="app.js"></script>
 	</body>
 </html>
