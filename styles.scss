@@ -16,6 +16,11 @@ body {
 
 #description {
 	text-align: center;
+
+	p {
+		max-width: 480px;
+		margin: auto;
+	}
 }
 
 #prices-form {
